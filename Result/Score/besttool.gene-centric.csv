@@ -1,0 +1,11 @@
+,Sample size,Feature selection,Balance,Robustness,Subtype combination,Subtype,Gender,Stage,Age
+BLCA,SNF(3/4),SNF(11/19),SNF(9/11),PP(5/11),SNF(5/11),SNF(3/7),"IntNMF,LRAclst(2/7)",NEMO(3/7),"IntNMF,SNF(2/7)"
+BRCA,SNF(8/12),SNF(9/19),SNF(6/11),PP(6/11),NEMO(5/11),NEMO(7/7),,NEMO(3/7),"MOFA,IntNMF(2/7)"
+COAD,MOFA(5/10),IntNMF(8/19),IntNMF(7/11),NEMO(3/11),IntNMF(3/11),"IntNMF,MOFA,NEMO(2/7)","MOFA,LRAclst,COCA(2/7)","PP,NEMO(2/7)","Spectrum,IntNMF,LRAclst(2/7)"
+HNSC,NEMO(8/12),NEMO(13/19),NEMO(11/11),NEMO(4/11),"IntNMF,NEMO(3/11)",NEMO(4/7),SNF(4/7),"PP,LRAclst(2/7)",Spectrum(3/7)
+KIRP,SNF(4/6),IntNMF(12/19),NEMO(10/11),IntNMF(6/11),"SNF,IntNMF,CC,PP(1/4)","IntNMF,SNF(2/7)",IntNMF(3/7),PP(4/7),SNF(2/7)
+LIHC,PP(10/12),PP(10/19),PP(11/11),PP(6/11),PP(3/4),PP(5/7),"IntNMF,Spectrum(2/7)",COCA(4/7),"NEMO,IntNMF(2/7)"
+LUAD,PP(2/4),PP(11/19),PP(11/11),PP(7/11),PP(35/57),"NEMO,SNF(2/7)",PP(4/7),"COCA,IntNMF(2/7)",CC(3/7)
+SKCM,NEMO(5/8),LRAclst(7/19),Spectrum(8/11),CC(4/11),CC(3/11),NEMO(3/7),SNF(3/7),NEMO(3/7),"NEMO,SNF,IntNMF(2/7)"
+STAD,CC(4/8),CC(11/19),Spectrum(8/11),PP(6/11),CC(6/11),NEMO(3/7),"CC,Spectrum,COCA(2/7)",NEMO(3/7),IntNMF(2/7)
+THCA,CC(8/12),CC(18/19),CC(11/11),"CC,PP(4/11)",CC(17/26),Spectrum(4/7),MOFA(4/7),NEMO(3/7),NEMO(4/7)

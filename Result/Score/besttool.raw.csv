@@ -1,0 +1,11 @@
+,Sample size,Feature selection,Balance,Robustness,Subtype combination,Subtype,Gender,Stage,Age
+BLCA,PP(4/4),PP(18/19),PP(11/11),PP(6/11),PP(8/11),PP(7/7),Spectrum(4/7),CC(5/7),COCA(3/7)
+BRCA,PP(11/12),PP(16/19),PP(10/11),PP(7/11),PP(9/11),PP(6/7),,"IntNMF,Spectrum(2/7)",IntNMF(3/7)
+COAD,PP(8/10),PP(11/19),CC(8/11),PP(4/11),PP(7/11),PP(5/7),Spectrum(3/7),"PP,NEMO,IntNMF(2/7)",Spectrum(3/7)
+HNSC,"IclusterPlus,SNF(4/12)",PP(8/19),IclusterPlus(9/11),IclusterPlus(6/11),NEMO(3/11),IntNMF(3/7),IntNMF(3/7),MOFA(4/7),Spectrum(3/7)
+KIRP,SNF(6/6),SNF(14/19),MOFA(8/11),IclusterPlus(9/11),PP(2/4),CC(3/7),IntNMF(2/7),PP(4/7),IntNMF(5/7)
+LIHC,IclusterPlus(6/12),IclusterPlus(10/19),IclusterPlus(11/11),IclusterPlus(8/11),NEMO(2/4),PP(2/7),"LRAclst,IntNMF,MOFA(2/7)",LRAclst(6/7),NEMO(3/7)
+LUAD,SNF(4/4),"SNF,MOFA(5/19)","SNF,NEMO(5/11)",IclusterPlus(4/11),SNF(26/57),SNF(4/7),"Spectrum,IntNMF(2/7)",NEMO(4/7),PP(3/7)
+SKCM,SNF(4/8),NEMO(8/19),IclusterPlus(6/11),IclusterPlus(5/11),"NEMO,MOFA(3/11)","NEMO,Spectrum(2/7)",Spectrum(3/7),"IntNMF,CC(3/7)",CC(3/7)
+STAD,SNF(7/8),SNF(8/19),MOFA(8/11),IclusterPlus(5/11),SNF(7/11),CC(3/7),IntNMF(4/7),IntNMF(3/7),Spectrum(3/7)
+THCA,CC(5/12),CC(18/18),CC(10/11),PP(5/11),CC(21/26),CC(7/7),"Spectrum,MOFA(3/7)",NEMO(6/7),IntNMF(4/7)

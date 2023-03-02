@@ -1,0 +1,11 @@
+,Sample size,Feature selection,Balance,Robustness,Subtype combination,Subtype,Gender,Stage,Age
+BLCA,Raw(+0.07),Raw(+0.06),Raw(+0.05),Raw(+0.05),Norm(+0.01),Raw(+0.06),Norm(+0.26),GC(+0.001),Norm(+0.003)
+BRCA,Raw(+0.04),Raw(+0.02),Raw(+0.04),Raw(+0.04),Norm(+0.002),Norm(+0.03),(+nan),GC(+0.005),Norm(+0.002)
+COAD,Norm(+0.01),Raw(+0.01),Norm(+0.04),Norm(+0.03),Raw(+0.03),Norm(+0.01),Norm(+0.23),Norm(+0.004),Norm(+0.01)
+HNSC,Norm(+0.04),Norm(+0.01),Norm(+0.02),Norm(+0.02),Norm(+0.04),Norm(+0.02),Norm(+0.23),GC(+0.004),Norm(+0.005)
+KIRP,Norm(+0.01),GC(+0.02),Norm(+0.04),Raw(+0.06),Raw(+0.05),Raw(+0.02),Norm(+0.2),Norm(+0.01),GC(+0.01)
+LIHC,Norm(+0.03),Norm(+0.02),Norm(+0.02),Norm(+0.02),Norm(+0.03),Norm(+0.01),Norm(+0.21),Raw(+0.004),Norm(+0.001)
+LUAD,GC(+0.02),GC(+0.03),GC(+0.04),GC(+0.02),GC(+0.08),GC(+0.04),Norm(+0.27),Norm(+0.004),GC(+0.001)
+SKCM,Raw(+0.01),Raw(+0.002),Norm(+0.02),Norm(+0.01),Norm(+0.01),Norm(+0.01),Norm(+0.2),Norm(+0.002),Norm(+0.01)
+STAD,Norm(+0.02),Norm(+0.03),Norm(+0.02),Norm(+0.02),Norm(+0.04),Norm(+0.02),Norm(+0.22),Norm(+0.003),Norm(+0.003)
+THCA,GC(+0.02),GC(+0.02),GC(+0.02),GC(+0.03),Raw(+0.02),Norm(+0.004),Norm(+0.27),Norm(+0.004),Norm(+0.02)
