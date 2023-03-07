@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 from library.TEST_UTILS import DATA_DIR, GE, ME, MI, CNV
 
-METADIR = '%s/annotation' % (os.path.dirname(os.path.abspath(__file__)))
+OMICS_ANNOTATION_DIR = '%s/annotation' % (os.path.dirname(os.path.abspath(__file__)))
 
 # PDA() object
 class PDA:
@@ -33,7 +33,7 @@ class PDA:
 def gsymToendgid(dat_o, o):
     gsym_dict = {}
     gsym_set = set()
-    for line in open('%s/geneid/ensgid_info.tsv' % (METADIR)):
+    for line in open('%s/geneid/ensgid_info.tsv' % (OMICS_ANNOTATION_DIR)):
         tok = line.strip().split('\t')
         ensgid = tok[0]
         enstid = tok[2]
@@ -57,7 +57,7 @@ def preproc_omics(o, dat_o):
     elif o == MI:
         dat_o[o] = dat_o[o].fillna(0)
         # -- convert MIMAT IDs to miRNA IDs
-        mirid_f = '%s/mirna/mirna_id_table.tsv' % (METADIR)
+        mirid_f = '%s/mirna/mirna_id_table.tsv' % (OMICS_ANNOTATION_DIR)
         mirid_dict = {}
         for line in open(mirid_f):
             mirid, mimatid = line.strip().split('\t')
@@ -85,9 +85,9 @@ def preproc_omics(o, dat_o):
 
 def convert_to_gene_level(pda):
     # load metadata
-    gid_tid_file = '%s/geneid/gid_tid.txt' % (METADIR)  # ENSTID to ENSGID mapping information
-    methylation_promoter_probes = '%s/methylation/promoter_probes_illumina450.txt' % (METADIR)  # promoter methylation probe information
-    mirna_gene_target_file = '%s/mirna/mirna_target_gene.csv' % (METADIR)  # miRNA-target gene information
+    gid_tid_file = '%s/geneid/gid_tid.txt' % (OMICS_ANNOTATION_DIR)  # ENSTID to ENSGID mapping information
+    methylation_promoter_probes = '%s/methylation/promoter_probes_illumina450.txt' % (OMICS_ANNOTATION_DIR)  # promoter methylation probe information
+    mirna_gene_target_file = '%s/mirna/mirna_target_gene.csv' % (OMICS_ANNOTATION_DIR)  # miRNA-target gene information
 
     # preparing gene-level data
     print('[%s-%s] converting to gene-centric data' % (pda.cancer_type, pda.clinical_feature))

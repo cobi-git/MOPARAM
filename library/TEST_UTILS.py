@@ -13,7 +13,8 @@ import seaborn as sns
 
 HOME_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_BASE_DIR = join(HOME_DIR, 'Result')
-DATA_DIR = '/data3/projects/2021_moparam/TCGA'
+DATA_DIR = join(HOME_DIR, 'TCGA')
+
 CLUSTERING_SCORE_DIR = join(OUT_BASE_DIR, 'Score')
 CLUSTERING_RESULT_DIR = join(OUT_BASE_DIR, 'Clustering_results')
 FEATURE_INFO_DIR = join(OUT_BASE_DIR, 'Feature_info')
@@ -82,6 +83,11 @@ def getPDA(pdapath):
     f = open(pdapath, 'rb')
     pda = pickle.load(f)
     f.close()
+    return pda
+
+def odf_stats(pda):  # getting stats of omics data
+    for o in pda.data_omics_level.keys():
+        pda.data_n[o] = pda.data_omics_level[o].shape
     return pda
 
 def split_from_filename(filename):
