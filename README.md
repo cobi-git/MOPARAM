@@ -68,15 +68,27 @@ This process is implemented through '/preprocessing/make_pda.py'.
 
 ###  Sample size test <a name="sample-size-test"></a>
 
+<img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/sample_size_test.jpg" alt="" width="700">
+
 ###  Feature selection test <a name="feature-selection-test"></a>
+
+<img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/feature_selection_test.jpg" alt="" width="700">
 
 ###  Balance test <a name="balance-test"></a>
 
+<img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/balance_test.jpg" alt="" width="700">
+
 ###  Robustness test <a name="robustness-test"></a>
+
+<img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/robustness_test.jpg" alt="" width="700">
 
 ###  Subtype combination test <a name="subtype-combination-test"></a>
 
+<img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/subtype_combination_test.jpg" alt="" width="700">
+
 ###  Omics combination test <a name="omics-combination-test"></a>
+
+<img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/omics_combination_test.jpg" alt="" width="700">
 
 ## Contributing <a name="contributing"></a>
 
