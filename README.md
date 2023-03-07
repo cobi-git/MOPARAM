@@ -77,7 +77,7 @@ for file in sorted(getfilelist("./test")):
     with open(file_path) as f:
         code_to_run = f.read()
     exec(code_to_run)
-```python
+```
 
 
 ###  Sample size test <a name="sample-size-test"></a>
