@@ -7,9 +7,12 @@ from os.path import join, isfile, isdir
 import pickle
 
 import numpy as np
+import pandas as pd
+import qnorm
 from matplotlib import pyplot as plt
 from scipy.stats import norm
 import seaborn as sns
+from sklearn.preprocessing import MinMaxScaler
 
 HOME_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_BASE_DIR = join(HOME_DIR, 'Result')
@@ -31,6 +34,7 @@ FEATURE_SELECTION_RATIO = 0.1
 core_n = 10
 BASE_DIR = 'Clustering_results'
 
+TCGA = 'TCGA'
 ME = 'ME'
 GE = 'GE'
 MI ='MI'
@@ -89,6 +93,18 @@ def odf_stats(pda):  # getting stats of omics data
     for o in pda.data_omics_level.keys():
         pda.data_n[o] = pda.data_omics_level[o].shape
     return pda
+
+def pda_error(msg, pda_obj):
+    error_filename = '%s/%s/PDA/PDA_%s_%s_%s_%s_%s_0.error.pda' % (DATA_DIR, pda_obj.cancer_type,
+                                               pda_obj.project,
+                                               pda_obj.cancer_type,
+                                               pda_obj.clinical_feature,
+                                               pda_obj.omics_string,
+                                               pda_obj.aggregation_type)
+    print('[%s-%s]'% (pda_obj.cancer_type, pda_obj.clinical_feature) + msg)
+    f = open(error_filename, 'w')
+    f.close()
+    exit()
 
 def split_from_filename(filename):
     cancer = filename.split('/')[5]
@@ -161,3 +177,23 @@ def plot_all_distributions(df, omics_name, prep, cancer):
 
     # Display the plot
     plt.show()
+
+def proc_scale(d):
+    scaler = MinMaxScaler()
+    d_s = MinMaxScaler(feature_range=(0, 1)).fit(d.T).transform(d.T).T
+    df_s = pd.DataFrame(d_s, columns=list(d.columns))
+    df_s = df_s.round(6)
+    return df_s
+
+
+def normalize(pda_obj):
+    print('[%s-%s] normalizing data' % (pda_obj.cancer_type, pda_obj.clinical_feature))
+    df_omics_set = []
+    for o in pda_obj.omics_types:
+        df = pda_obj.data_gene_level[o]
+        df_norm = qnorm.quantile_normalize(df, axis=1, ncpus=8)  # quantile normalize, If axis=1 (default), standardize each sample (column), if axis=0, standardize each feature(row)
+        df_norm = proc_scale(df_norm)  # scaling to 0~1
+        # df_norm.index=df.index
+        pda_obj.data_gene_level_norm[o] = df_norm
+        pda_obj.data_gene_level_norm[o].index = df.index
+    return pda_obj
