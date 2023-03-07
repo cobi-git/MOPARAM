@@ -9,9 +9,15 @@ A general guideline on parameter selection for multi-omics intergrative analysis
     2. [Recommended system spec](#recomended-spec)
     3. [Data generation](#data-generation)
     4. [Preprocessing](#preprocessing)
-    5. [Benchmarking test](#benchmarking-test)
-
-3. [Contributing](#contributing)
+3. [Benchmarking test](#benchmarking-test)
+    1. [Execute all test in once](#exec-all-test)
+    2. [Sample size test](#sample-size-test)
+    3. [Feature selection test](#feature-selection-test)
+    4. [Balance test](#balance-test)
+    5. [Robustness test](#robustness-test)
+    6. [Subtype combination test](#subtype-combination-test)
+    7. [Omics combination test](#omics-combination-test) 
+4. [Contributing](#contributing)
 
 
 ## Introduction <a name="introduction"></a>
@@ -56,10 +62,21 @@ This process is implemented through '/preprocessing/make_pda.py'.
 
 *Please refer to the /preprocessing/Gene_level_preprocessing.py code for information on generating the GL dataset.
 
-### Benchmarking test <a name="benchmarking-test"></a>
+## Benchmarking test <a name="benchmarking-test"></a>
 
+###  Execute all test in once <a name="exec-all-test"></a>
 
+###  Sample size test <a name="sample-size-test"></a>
 
+###  Feature selection test <a name="feature-selection-test"></a>
+
+###  Balance test <a name="balance-test"></a>
+
+###  Robustness test <a name="robustness-test"></a>
+
+###  Subtype combination test <a name="subtype-combination-test"></a>
+
+###  Omics combination test <a name="omics-combination-test"></a>
 
 ## Contributing <a name="contributing"></a>
 
