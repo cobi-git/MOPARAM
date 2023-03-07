@@ -66,6 +66,19 @@ This process is implemented through '/preprocessing/make_pda.py'.
 
 ###  Execute all test in once <a name="exec-all-test"></a>
 
+Here is the code for exec_all_test.py. If you execute this code, you can perform all tests sequentially.
+
+```python
+from os.path import join
+from library.TEST_UTILS import getfilelist
+for file in sorted(getfilelist("./test")):
+    file_path = join('./test', file)
+    with open(file_path) as f:
+        code_to_run = f.read()
+    exec(code_to_run)
+    
+
+
 ###  Sample size test <a name="sample-size-test"></a>
 
 <img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/sample_size_test.jpg" alt="" width="700">
