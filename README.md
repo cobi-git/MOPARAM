@@ -78,7 +78,8 @@ for file in sorted(getfilelist("./test")):
         code_to_run = f.read()
     exec(code_to_run)
 ```
-
+If you want to perform only one test at a time, you can run the tests in the test directory according to your needs.
+The following are the diagrams for the rules of generating test cases in each test.
 
 ###  Sample size test <a name="sample-size-test"></a>
 
