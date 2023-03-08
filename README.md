@@ -17,7 +17,6 @@ A general guideline on parameter selection for multi-omics intergrative analysis
     5. [Robustness test](#robustness-test)
     6. [Subtype combination test](#subtype-combination-test)
     7. [Omics combination test](#omics-combination-test) 
-4. [Contributing](#contributing)
 
 
 ## Introduction <a name="introduction"></a>
@@ -118,7 +117,4 @@ The following are the diagrams for the rules of generating test cases in each te
 
 <img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/omics_combination_test.jpg" alt="" width="700">
 
-## Contributing <a name="contributing"></a>
-
-Hwijun Kwon and Inuk Jung conceived the study and designed the experiments. Hwijun Kwon developed the multi-omics integration methods and performed the data analysis. Hwijun Kwon and Inuk Jung contributed to the experimental design and interpretation of the results. Hwijun Kwon and Inuk Jung wrote the manuscript. IlKon Kim provided critical feedback on the manuscript and helped with the interpretation of the results. All authors reviewed and approved the final version of the manuscript.
 
