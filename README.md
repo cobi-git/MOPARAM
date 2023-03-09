@@ -51,10 +51,10 @@ The size of the a CDA will differ across projects and cancer types, due to the d
 Each project shall have a CDA per omics data. Here, all available samples per omics type will be included. It will be a simple aggregate of all BDAs per project and per omics (not normalized yet).
 
 [Example CDA file: TCGA-BRCA gene expression count data of all available samples]
-
+<img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/CDA_example.png" alt="" width="800">
 
 [Example clinical file: TCGA-BRCA clinical information per barcode]
-
+<img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/Clinical_example.png" alt="" width="800">
 
 If the necessary files are prepared, it is recommended to store them in the following directory structure.
 
