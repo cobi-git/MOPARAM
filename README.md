@@ -17,7 +17,7 @@ A general guideline on parameter selection for multi-omics intergrative analysis
     5. [Robustness test](#robustness-test)
     6. [Subtype combination test](#subtype-combination-test)
     7. [Omics combination test](#omics-combination-test) 
-
+4. [Feature selection information](#feature-selection-info)
 
 ## Introduction <a name="introduction"></a>
 With the advent of high-throughput sequencing technologies, multi-omics datasets are becoming increasingly complex, making it difficult to extract meaningful relationships between different biological features. In this paper, we propose a general guideline for multi-omics data analysis based on nine crucial factors, including sample size, feature selection, preprocessing type, noise ratio, sample balance, number of groups, cancer subtype combination, omics combination, and clinical features. We evaluate the effectiveness of the proposed guidelines by conducting benchmark tests on various types of TCGA cancer datasets using ten clustering-based multi-omics methods. Our results demonstrate that our proposed guidelines can significantly enhance the accuracy of multi-omics analysis, especially when it comes to feature selection, sample balance, and noise reduction. Overall, this paper provides a valuable resource for researchers and practitioners in the field, helping them to better navigate the challenges of multi-omics data analysis and extract meaningful relationships between different biological features.
@@ -116,5 +116,8 @@ The following are the diagrams for the rules of generating test cases in each te
 ###  Omics combination test <a name="omics-combination-test"></a>
 
 <img src="https://github.com/cobi-git/MOPARAM/blob/main/Images/omics_combination_test.jpg" alt="" width="700">
+
+
+##  Feature selection information <a name="feature-selection-info"></a>
 
 
