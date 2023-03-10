@@ -126,4 +126,4 @@ https://github.com/cobi-git/MOPARAM/tree/main/Result/Feature_info
 
 The above link contains the names of the extracted features for each test case.
 
-The default feature selection ratio is 10%, so for other tests besides the feature selection test, you can check the files with a 10% ratio. For example, for other tests that use the NORM dataset for the BRCA dataset (such as the sample size test), you can refer to the TCGA_BLCA_Subtype_GE-ME-MI_10_norm.features.csv file located in the MOPARAM/Result/Feature_info/BLCA/norm/ directory.
+The default feature selection ratio is 10%, so for other tests besides the feature selection test, you can check the files with a 10% ratio. For example, for other tests that use the NORM dataset for the BRCA dataset (such as the sample size test), you can refer to the **TCGA_BLCA_Subtype_GE-ME-MI_10_norm.features.csv** file located in the **MOPARAM/Result/Feature_info/BLCA/norm/** directory.
